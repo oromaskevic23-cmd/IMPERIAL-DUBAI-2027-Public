@@ -110,6 +110,18 @@ These are developer-run research results on supported text layouts, not a deploy
 node release-audit.mjs
 ```
 
+## Triple Crown — three candidate submissions
+
+The championship permits multiple applications under one participant enrolment. IMPERIAL Core is preparing three distinct original candidates. Admission, eligibility and simultaneous award receipt remain unconfirmed.
+
+| Candidate | Problem addressed | Current evidence |
+| --- | --- | --- |
+| Business | Invoice discrepancies and unsafe recommendations | Existing governed invoice prototype and synthetic regression evidence |
+| Personal | Missed obligations and overbooked schedules | Local consent-bound planner: 12/12 tests, two tasks saved in a synthetic demo |
+| Societal | Navigating public services across languages | Source-linked local checklist: 12/12 tests, three steps marked complete in an Arabic demo |
+
+The two additional candidates are deterministic developer-run prototypes, not yet LLM-powered autonomous agents, deployed services, independent QA or validated customer impact. The societal workflow does not submit an official application or claim government affiliation. All data in these experiments are synthetic. The 24 tests are separate from earlier business regression counts and signed checkpoints. See [Triple Crown preparation](TRIPLE_CROWN.md).
+
 ## Competition preparation
 
 Our goal is to demonstrate useful, safe, accountable AI assistance and measurable economic value. Registration acceptance, jury selection, independent QA, successful model quality acceptance and a measured client pilot remain unconfirmed.
