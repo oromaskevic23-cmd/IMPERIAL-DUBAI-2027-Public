@@ -33,6 +33,10 @@ An AI-assisted invoice reconciliation prototype designed to help finance teams i
 
 These are the canonical design principles of IMPERIAL Core. The competition prototype is a separate original implementation; this public overview does not claim that every named platform component is deployed or integrated.
 
+## Interactive public walkthrough
+
+[Explore four illustrative scenarios](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/#walkthrough): matching invoice, invoice exception, unauthorized review and owner emergency stop. The walkthrough uses fixed synthetic examples and is not a live execution of the private agent. It accepts no business data and performs no payment or external action.
+
 ## Enterprise workflow at a glance
 
 | Stage | Governance outcome |
@@ -69,6 +73,10 @@ The checkpoint was recorded in a local synthetic environment on 15 November 2026
 A matching invoice receives a recommendation. An invoice with an amount discrepancy and changed bank details requires authorized human review. An unauthorized review is denied. The owner can stop new submissions, and evidence tampering is rejected. No payment is executed.
 
 Read the [public evidence summary](EVIDENCE.md) and [public/private disclosure policy](PUBLIC_BOUNDARY.md).
+
+## Public presentation acceptance
+
+22/22 public tooling tests passed (10 signature/schema tests and 12 presentation tests). See [PUBLIC_ACCEPTANCE.md](PUBLIC_ACCEPTANCE.md). These are separate from the private product counts.
 
 ## Competition preparation
 
