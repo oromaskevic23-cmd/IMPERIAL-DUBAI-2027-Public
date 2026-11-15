@@ -74,6 +74,12 @@ A matching invoice receives a recommendation. An invoice with an amount discrepa
 
 Read the [public evidence summary](EVIDENCE.md) and [public/private disclosure policy](PUBLIC_BOUNDARY.md).
 
+## Real language model evaluation — latest experiment
+
+**Safety PASS · Model quality FAIL.** An actual SmolLM2-135M-Instruct model was tested via the local adapter. Free generation produced 0/4 valid action responses. Constrained inference returned 8/8 valid responses, 5/8 correct raw recommendations and 7/8 correct governed decisions. Two unsafe recommendations on five exception cases were overridden; no payment occurred. The model is not accepted for production. [Read the full public results](REAL_MODEL_RESULTS.md).
+
+This later experiment is not included in the earlier signed checkpoint.
+
 ## Public presentation acceptance
 
 31/31 public tooling tests passed (10 signature/schema tests, 12 presentation tests and 9 release-integrity tests). All eight deployed presentation files matched the pinned public source byte-for-byte. See [PUBLIC_ACCEPTANCE.md](PUBLIC_ACCEPTANCE.md) and [RELEASE_INTEGRITY.md](RELEASE_INTEGRITY.md). These are separate from the private product counts.
@@ -84,7 +90,7 @@ node release-audit.mjs
 
 ## Competition preparation
 
-Our goal is to demonstrate useful, safe, accountable AI assistance and measurable economic value. Registration acceptance, jury selection, independent QA, a real-model evaluation and a measured client pilot remain unconfirmed.
+Our goal is to demonstrate useful, safe, accountable AI assistance and measurable economic value. Registration acceptance, jury selection, independent QA, successful model quality acceptance and a measured client pilot remain unconfirmed.
 
 This repository contains only the public-facing presentation. Implementation source, operational configuration, sensitive evidence and private development history are not published here.
 

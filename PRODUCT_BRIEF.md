@@ -23,7 +23,7 @@ The disclosed local benchmark contains 24 synthetic cases, including 12 reviews 
 
 ## Acceptance roadmap
 
-1. Verify actual model integration with an approved local endpoint.
+1. Improve model quality after the first [actual local inference experiment](REAL_MODEL_RESULTS.md): transport and safety exercised, quality acceptance failed.
 2. Execute independent security and browser acceptance.
 3. Run an authorized paired pilot with predeclared cases, measured human time and costs.
 4. Review the evidence, limitations and commercial readiness before deployment.

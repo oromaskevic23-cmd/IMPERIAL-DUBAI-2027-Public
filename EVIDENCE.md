@@ -60,6 +60,6 @@ Local release checks passed: correct signature accepted, modified checkpoint rej
 | Owner invokes emergency stop | New submission rejected; stop persists after restart |
 | Evidence modified | Integrity verification rejects the modified package |
 
-No live LLM evaluation, independent QA, completed client pilot, measured savings, successful browser E2E, production deployment or competition acceptance is claimed. This public repository is a presentation and evidence-summary surface, not the competition implementation.
+The signed checkpoint predates the later [real model experiment](REAL_MODEL_RESULTS.md), which exercised a local model but failed model quality acceptance. The new report is separate and not signed by this checkpoint. No independent QA, completed client pilot, measured savings, successful browser E2E, production deployment or competition acceptance is claimed. This public repository is a presentation and evidence-summary surface, not the competition implementation.
 
 Architecture → Implementation → Evidence.
