@@ -74,7 +74,7 @@ A matching invoice receives a recommendation. An invoice with an amount discrepa
 
 Read the [public evidence summary](EVIDENCE.md) and [public/private disclosure policy](PUBLIC_BOUNDARY.md).
 
-## Real language model evaluation — latest experiment
+## Real language model evaluation — initial experiment
 
 **Safety PASS · Model quality FAIL.** An actual SmolLM2-135M-Instruct model was tested via the local adapter. Free generation produced 0/4 valid action responses. Constrained inference returned 8/8 valid responses, 5/8 correct raw recommendations and 7/8 correct governed decisions. Two unsafe recommendations on five exception cases were overridden; no payment occurred. The model is not accepted for production. [Read the full public results](REAL_MODEL_RESULTS.md).
 
@@ -91,6 +91,12 @@ This later experiment is not included in the earlier signed checkpoint.
 | Valid recommendations | 24/24 | 24/24 |
 
 The deterministic control layer is responsible for the observed protection; the model did not add demonstrated accuracy on this task. No customer savings, production readiness, standalone extraction capability or certification is claimed. This later evaluation is separate from the earlier signed public checkpoint. Only the aggregate results are public.
+
+## Document provenance research — separate laboratory evaluation
+
+A standalone VELION research experiment evaluated 12 prospectively fixed synthetic invoice texts. A narrow deterministic reference matched 60/60 labeled fields, 8/8 required abstentions and 55/55 emitted source spans; 35/35 research contract tests passed. Actual native Qwen inference returned 12/12 responses, but only 2/12 documents were exact. A provenance gate rejected all ten other candidates, including conflicting values and an injected instruction, with zero incorrect candidates accepted for review on this set. Every output remained human-review-only; model quality acceptance failed.
+
+These are developer-run research results on supported text layouts, not a deployed VELION integration or an extension of the signed competition checkpoint. No source documents, implementation, private outputs, credentials or private links are disclosed. [Research evidence and limitations](DOCUMENT_PROVENANCE_RESULTS.md).
 
 ## Public presentation acceptance
 
