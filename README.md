@@ -10,6 +10,8 @@
 
 > Independent competition preparation by IMPERIAL Core. The Dubai Chamber reference artwork identifies the intended competition context; it does not establish partnership, endorsement, registration acceptance or affiliation.
 
+<p align="center"><a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/">Live public presentation</a> · <a href="EVIDENCE.md">Verify evidence</a> · <a href="PRODUCT_BRIEF.md">Product brief</a> · <a href="SECURITY.md">Security & trust</a></p>
+
 ## Governed Invoice Exception Agent
 
 An AI-assisted invoice reconciliation prototype designed to help finance teams identify discrepancies, route exceptions to authorized human reviewers and preserve a verifiable record of decisions. The agent recommends actions; it cannot authorize or execute payments.
@@ -31,12 +33,32 @@ An AI-assisted invoice reconciliation prototype designed to help finance teams i
 
 These are the canonical design principles of IMPERIAL Core. The competition prototype is a separate original implementation; this public overview does not claim that every named platform component is deployed or integrated.
 
+## Enterprise workflow at a glance
+
+| Stage | Governance outcome |
+| --- | --- |
+| 01 — Reconcile | Compare invoice and authorized reference records |
+| 02 — Assess | Advisory model can recommend, but cannot grant authority |
+| 03 — Govern | Deterministic policy routes exceptions to human review |
+| 04 — Review | Authorized reviewer records a decision |
+| 05 — Evidence | Audit history and integrity-verifiable evidence |
+| 06 — Stop | Owner can prevent further submissions |
+
+See the [product brief](PRODUCT_BRIEF.md) for the intended business value and [security boundaries](SECURITY.md) for what has actually been demonstrated.
+
 ## Evidence before claims
 
 <table>
 <tr><td align="center"><strong>133/133</strong><br>Python regression</td><td align="center"><strong>8/8</strong><br>UI-state tests</td><td align="center"><strong>9/9</strong><br>Showcase assertions</td></tr>
 <tr><td align="center"><strong>10/10</strong><br>Ed25519 tests (included in 133)</td><td align="center"><strong>24</strong><br>Synthetic benchmark cases</td><td align="center"><strong>0</strong><br>False matches in this benchmark</td></tr>
 </table>
+
+**NEW — Public verification tooling:** 10/10 separate Node.js tests passed on 15 November 2026. These verify the published summary and reject tampering, invalid keys and inconsistent claims. They are not part of the private product regression count.
+
+```sh
+node evidence/verify-cli.mjs
+node --test evidence/verify.test.mjs
+```
 
 **Verify the signed public checkpoint:** [JSON data](evidence/checkpoint.json) · [Ed25519 signature](evidence/checkpoint.sig.b64) · [Public key](evidence/public-key.pem) · [Verification instructions](EVIDENCE.md#verify-the-public-checkpoint).
 

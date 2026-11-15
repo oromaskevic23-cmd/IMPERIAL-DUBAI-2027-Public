@@ -15,6 +15,19 @@ The [public checkpoint](evidence/checkpoint.json), [detached Ed25519 signature](
 
 The private evidence package was verified locally with OpenSSL 3.5.5. The public checkpoint is a separately signed summary. A valid signature proves that the checkpoint bytes match the signature for the supplied key, not that an independent evaluator observed the execution.
 
+## Public verification tooling
+
+The dependency-free verifier is available for Node.js 22+ and modern browsers with WebCrypto Ed25519 support:
+
+```sh
+node evidence/verify-cli.mjs
+node --test evidence/verify.test.mjs
+```
+
+On 15 November 2026, Node.js v22.23.4 executed all 10 public tests successfully (76.486 ms, developer-run). The CLI returned `verified: true`. These tests are additional public tooling checks, not part of the 133 private Python or eight private UI-state tests. They cover the original signature, byte alteration, whitespace tampering, corrupted signature, unrelated key, malformed signature, invalid counts, subset overcount, false payment claims and removed limitations. Schema validation is not independent validation of the reported execution.
+
+The [live presentation](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/) also offers an in-browser verification control. Browser end-to-end testing is a separate acceptance gate.
+
 ## Verify the public checkpoint
 
 With OpenSSL 3, from the repository root:
