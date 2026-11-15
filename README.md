@@ -98,6 +98,10 @@ A standalone VELION research experiment evaluated 12 prospectively fixed synthet
 
 These are developer-run research results on supported text layouts, not a deployed VELION integration or an extension of the signed competition checkpoint. No source documents, implementation, private outputs, credentials or private links are disclosed. [Research evidence and limitations](DOCUMENT_PROVENANCE_RESULTS.md).
 
+## PDF and OCR research — new laboratory capability
+
+10/10 local synthetic intake tests passed; native text and English OCR each recovered 4/4 expected lines. This is a separate review-only research prototype, not deployed competition functionality. [Research results and limitations](DOCUMENT_PROVENANCE_RESULTS.md#separate-pdf-intake-research).
+
 ## Public presentation acceptance
 
 31/31 public tooling tests passed (10 signature/schema tests, 12 presentation tests and 9 release-integrity tests). All eight deployed presentation files matched the pinned public source byte-for-byte. See [PUBLIC_ACCEPTANCE.md](PUBLIC_ACCEPTANCE.md) and [RELEASE_INTEGRITY.md](RELEASE_INTEGRITY.md). These are separate from the private product counts.
