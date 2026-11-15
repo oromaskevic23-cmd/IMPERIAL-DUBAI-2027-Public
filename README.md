@@ -2,6 +2,8 @@
   <img src="assets/IMPERIAL-DUBAI-2027.png" alt="Dubai Chamber reference artwork — competition context" width="100%">
 </p>
 
+<p align="center"><a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/"><strong>Official public presentation · Share on Telegram &amp; WhatsApp</strong></a></p>
+
 <h1 align="center">IMPERIAL Core — Dubai 2027</h1>
 <p align="center"><strong>Enterprise AI Agents · Zero Trust · Human Governance · Verifiable Intelligence</strong></p>
 <p align="center">Architecture → Implementation → Evidence</p>
