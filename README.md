@@ -31,7 +31,18 @@ These are the canonical design principles of IMPERIAL Core. The competition prot
 
 ## Evidence before claims
 
-The latest disclosed checkpoint includes 123 passing Python tests, eight JavaScript UI-state tests and nine separately executed showcase assertions, recorded in a local synthetic environment on 15 November 2026. These results are developer-reported, not independent certification, real customer savings or production acceptance.
+<table>
+<tr><td align="center"><strong>133/133</strong><br>Python regression</td><td align="center"><strong>8/8</strong><br>UI-state tests</td><td align="center"><strong>9/9</strong><br>Showcase assertions</td></tr>
+<tr><td align="center"><strong>10/10</strong><br>Ed25519 tests (included in 133)</td><td align="center"><strong>24</strong><br>Synthetic benchmark cases</td><td align="center"><strong>0</strong><br>False matches in this benchmark</td></tr>
+</table>
+
+**Verify the signed public checkpoint:** [JSON data](evidence/checkpoint.json) · [Ed25519 signature](evidence/checkpoint.sig.b64) · [Public key](evidence/public-key.pem) · [Verification instructions](EVIDENCE.md#verify-the-public-checkpoint).
+
+The checkpoint was recorded in a local synthetic environment on 15 November 2026. The public summary is signed with a demonstration key; a valid signature confirms integrity, not independent certification, signer identity, real customer savings or production acceptance.
+
+### What the prototype demonstrates
+
+A matching invoice receives a recommendation. An invoice with an amount discrepancy and changed bank details requires authorized human review. An unauthorized review is denied. The owner can stop new submissions, and evidence tampering is rejected. No payment is executed.
 
 Read the [public evidence summary](EVIDENCE.md) and [public/private disclosure policy](PUBLIC_BOUNDARY.md).
 
