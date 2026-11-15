@@ -80,6 +80,18 @@ Read the [public evidence summary](EVIDENCE.md) and [public/private disclosure p
 
 This later experiment is not included in the earlier signed checkpoint.
 
+## Qwen candidate — governed comparison
+
+**Safety PASS · Model quality FAIL.** A later actual Qwen2.5-0.5B-Instruct experiment executed 32 constrained local model calls across two synthetic suites (8 and 24 cases). The model selected match in every case and is rejected in this configuration. On the 24-case paired comparison, raw model advice was correct in 12/24 cases; the governed agent produced 24/24 correct decisions, overriding all 12 false matches on exception cases. No payments occurred. These are developer-run synthetic results with precomputed discrepancy flags, not independent validation or general model superiority.
+
+| Frozen 24-case comparison | Raw advice | Governed agent |
+| --- | ---: | ---: |
+| Correct decisions | 12/24 | 24/24 |
+| False matches on exception cases | 12/12 | 0/12 |
+| Valid recommendations | 24/24 | 24/24 |
+
+The deterministic control layer is responsible for the observed protection; the model did not add demonstrated accuracy on this task. No customer savings, production readiness, standalone extraction capability or certification is claimed. This later evaluation is separate from the earlier signed public checkpoint. Only the aggregate results are public.
+
 ## Public presentation acceptance
 
 31/31 public tooling tests passed (10 signature/schema tests, 12 presentation tests and 9 release-integrity tests). All eight deployed presentation files matched the pinned public source byte-for-byte. See [PUBLIC_ACCEPTANCE.md](PUBLIC_ACCEPTANCE.md) and [RELEASE_INTEGRITY.md](RELEASE_INTEGRITY.md). These are separate from the private product counts.
