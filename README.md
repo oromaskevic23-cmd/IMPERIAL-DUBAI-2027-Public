@@ -76,7 +76,11 @@ Read the [public evidence summary](EVIDENCE.md) and [public/private disclosure p
 
 ## Public presentation acceptance
 
-22/22 public tooling tests passed (10 signature/schema tests and 12 presentation tests). See [PUBLIC_ACCEPTANCE.md](PUBLIC_ACCEPTANCE.md). These are separate from the private product counts.
+31/31 public tooling tests passed (10 signature/schema tests, 12 presentation tests and 9 release-integrity tests). All eight deployed presentation files matched the pinned public source byte-for-byte. See [PUBLIC_ACCEPTANCE.md](PUBLIC_ACCEPTANCE.md) and [RELEASE_INTEGRITY.md](RELEASE_INTEGRITY.md). These are separate from the private product counts.
+
+```sh
+node release-audit.mjs
+```
 
 ## Competition preparation
 

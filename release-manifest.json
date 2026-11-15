@@ -1,0 +1,55 @@
+{
+  "schema": "imperial-dubai-public-release-v1",
+  "source_commit": "b4de0c294674d494a99cce4ce8cb67187f3f1921",
+  "site_commit": "fddb40f2e631811c52445bfdccefd18d50df368b",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 8603,
+      "sha256": "988f27362549639492c5be345b06121d77296fd9518cf6fbdbb4593c065f6d76",
+      "mime": "text/html"
+    },
+    {
+      "path": "presentation.mjs",
+      "bytes": 1412,
+      "sha256": "b97e98e325f81d44dba228c4ae4ee876a0c6a5734796b2522fafb897ab50f624",
+      "mime": "text/javascript"
+    },
+    {
+      "path": "scenarios.mjs",
+      "bytes": 1927,
+      "sha256": "c254b5fed844c3d940bbf42b14575743ab694b4bb7eb8b05d9c40d05f05ddbe0",
+      "mime": "text/javascript"
+    },
+    {
+      "path": "evidence/verify.mjs",
+      "bytes": 4545,
+      "sha256": "b1731ceaf7275f0f3853bd3da81a9f0cabb1ffaa1fb8aabd12e6be08949d141f",
+      "mime": "text/javascript"
+    },
+    {
+      "path": "evidence/checkpoint.json",
+      "bytes": 888,
+      "sha256": "fb7e3432b3847111c3196419781f22118f06e68ea88490084a28bd49f562e106",
+      "mime": "application/json"
+    },
+    {
+      "path": "evidence/checkpoint.sig.b64",
+      "bytes": 89,
+      "sha256": "b424873659523a0153f344865e47ccc13d67a4328487524b46e5e3ab75e19e7d",
+      "mime": "application/octet-stream"
+    },
+    {
+      "path": "evidence/public-key.pem",
+      "bytes": 113,
+      "sha256": "b8295365643108bc138cf1720c275b804ef7642b5d6ba4468acf218476c3121b",
+      "mime": "application/x-x509-ca-cert"
+    },
+    {
+      "path": "assets/IMPERIAL-DUBAI-2027.png",
+      "bytes": 1390511,
+      "sha256": "b82495177127e3b59e12b0f67c4a18cbdb00c36d18bfac6815ef7075e0abc3b6",
+      "mime": "image/png"
+    }
+  ]
+}

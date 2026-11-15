@@ -1,0 +1,17 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {validateManifest,verifyBytes,auditRelease} from './release-audit.mjs';
+const read=async()=>JSON.parse(await readFile(new URL('./release-manifest.json',import.meta.url),'utf8'));
+const fixture=Buffer.from('sample');
+const entry={path:'index.html',bytes:fixture.length,sha256:createHash('sha256').update(fixture).digest('hex')};
+test('published manifest has eight unique paths',async()=>assert.equal(validateManifest(await read()).files.length,8));
+test('unknown path rejected before any network access',async()=>{const m=await read();m.files[0].path='../private';let called=false;await assert.rejects(auditRelease(m,()=>{called=true}),/Unexpected/);assert.equal(called,false)});
+test('duplicate path rejected',async()=>{const m=await read();m.files[1].path=m.files[0].path;assert.throws(()=>validateManifest(m),/duplicate/)});
+test('invalid source revision rejected',async()=>{const m=await read();m.source_commit='main';assert.throws(()=>validateManifest(m),/identity/)});
+test('banner hash cannot be replaced',async()=>{const m=await read();m.files.at(-1).sha256='0'.repeat(64);assert.throws(()=>validateManifest(m),/banner/)});
+test('correct bytes accepted',()=>assert.equal(verifyBytes(fixture,entry),true));
+test('same-size byte substitution rejected',()=>assert.throws(()=>verifyBytes(Buffer.from('Sample'),entry),/SHA-256/));
+test('wrong length rejected',()=>assert.throws(()=>verifyBytes(Buffer.from('samples'),entry),/Length/));
+test('HTTP error is not accepted',async()=>await assert.rejects(auditRelease(await read(),async()=>new Response('not found',{status:404})),/HTTP 404/));
