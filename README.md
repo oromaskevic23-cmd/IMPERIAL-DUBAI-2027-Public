@@ -2,7 +2,7 @@
   <img src="assets/IMPERIAL-DUBAI-2027.png" alt="Dubai Chamber reference artwork — competition context" width="100%">
 </p>
 
-<p align="center"><a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/"><strong>Official public presentation · Share on Telegram &amp; WhatsApp</strong></a></p>
+<p align="center"><a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/"><strong>IMPERIAL Core public project presentation</strong></a></p>
 
 <h1 align="center">IMPERIAL Core — Dubai 2027</h1>
 <p align="center"><strong>Enterprise AI Agents · Zero Trust · Human Governance · Verifiable Intelligence</strong></p>
@@ -10,7 +10,7 @@
 
 > Independent competition preparation by IMPERIAL Core. The Dubai Chamber reference artwork identifies the intended competition context; it does not establish partnership, endorsement, registration acceptance or affiliation.
 
-<p align="center"><a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/">Live public presentation</a> · <a href="EVIDENCE.md">Verify evidence</a> · <a href="PRODUCT_BRIEF.md">Product brief</a> · <a href="SECURITY.md">Security & trust</a></p>
+<p align="center"><a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/">Public interactive walkthrough</a> · <a href="EVIDENCE.md">Verify evidence</a> · <a href="PRODUCT_BRIEF.md">Product brief</a> · <a href="SECURITY.md">Security & trust</a></p>
 
 ## Governed Invoice Exception Agent
 
@@ -32,6 +32,8 @@ An AI-assisted invoice reconciliation prototype designed to help finance teams i
 - **Zero Trust**, **Public/Private Boundary** and **CRYPTO IMPERIAL Ecosystem Boundary** — explicit isolation; crypto and payments are outside the competition prototype's scope.
 
 These are the canonical design principles of IMPERIAL Core. The competition prototype is a separate original implementation; this public overview does not claim that every named platform component is deployed or integrated.
+
+**One ecosystem, a bounded competition product.** IMPERIAL Core uses **Digital State** as an engineering vision for shared agent identity, mission governance, security and evidence, **not** as a claim of legal statehood, existing production integration or competition affiliation. Its repositories are specialized engineering boundaries, not dozens of separately operating companies. The competition agent remains an original, controlled prototype, with crypto infrastructure completely excluded. For external reviewers: [unified architecture and tested handoffs](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/UNIFIED_ECOSYSTEM_EVIDENCE.md) · [machine-readable public evidence index](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/EVIDENCE_INDEX.json).
 
 ## Interactive public walkthrough
 
